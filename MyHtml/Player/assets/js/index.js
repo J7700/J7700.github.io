@@ -11,11 +11,11 @@
   var isOn = true; // 是否开启
   var videoListLen = $(".player-list-video").length; // 视频列表长度
   var videoSpeed = 1; // 视频播放速度
-  var videoListAll = new Array(
-    "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBcnVOSlBoZ05kRExqZzVRb1pzOUQ0ZEY4TnRKP2U9TzJlc01j.mp4",
-    "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBcnVOSlBoZ05kRExqZ18zVEo2TF81VnBBdkkzP2U9WG1uSGUy.mp4",
-    "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBcnVOSlBoZ05kRExqaERlMDdubm5NMUpFQWtsP2U9eWdwQzUy.mp4"
-  ); // 视频列表
+    var videoListAll = new Array(
+      "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBcnVOSlBoZ05kRExqZzVRb1pzOUQ0ZEY4TnRKP2U9TzJlc01j.mp4",
+      "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBcnVOSlBoZ05kRExqZ18zVEo2TF81VnBBdkkzP2U9WG1uSGUy.mp4",
+      "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBcnVOSlBoZ05kRExqaERlMDdubm5NMUpFQWtsP2U9eWdwQzUy.mp4"
+    ); // 视频列表
   var danId = 0; // 弹幕id
   var clickFlag = null; // 点击标识
   var vedioError = null; // 视频错误

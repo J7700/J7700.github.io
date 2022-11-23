@@ -1,18 +1,15 @@
-* {
+*{
     margin: 0;
     padding: 0;
     border: none;
     font-family: 微软雅黑;
 }
-
-html,
-body {
+html, body{
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
-
-#hitokoto {
+#hitokoto{
     position: absolute;
     color: rgb(0, 0, 0);
     font-size: 20px;
@@ -21,8 +18,7 @@ body {
     left: 50%;
     top: 70%;
 }
-
-.psVideo {
+.psVideo{
     width: 800px;
     position: relative;
     margin: 20px auto;
@@ -30,8 +26,7 @@ body {
     transition: all .5s;
     overflow: hidden;
 }
-
-.my-psVideo {
+.my-psVideo{
     position: relative;
     margin: 0 auto;
     width: 800px;
@@ -40,55 +35,47 @@ body {
     transition: all .5s;
     background: black;
 }
-
-.full {
+.full{
     margin: 0 auto;
     width: 100%;
     height: 100%;
     background: black;
 }
-
-.psVideo-play-one {
+.psVideo-play-one{
     width: 70px;
     height: 70px;
     background: url("../images/player/playone.png") no-repeat;
     opacity: .7;
-    background-size: cover;
+    background-size:cover;
     position: absolute;
     bottom: 70px;
     right: 60px;
     cursor: pointer;
 }
-
-.psVideo-play-footer {
+.psVideo-play-footer{
     position: absolute;
     width: 100%;
     height: 36px;
     bottom: 0;
 }
-
-.psVideo-shade {
+.psVideo-shade{
     position: absolute;
     height: 60px;
     width: 100%;
     bottom: 4px;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6));
     transition: opacity .3s;
 }
-
-.psVideo-shade-full {
+.psVideo-shade-full{
     bottom: 0;
 }
-
-.psVideo-shade-on {
+.psVideo-shade-on{
     opacity: 1;
 }
-
-.psVideo-shade-off {
+.psVideo-shade-off{
     opacity: 0;
 }
-
-.psVideo-play-footer .psVideo-play-btn {
+.psVideo-play-footer .psVideo-play-btn{
     width: 23px;
     height: 23px;
     float: left;
@@ -96,18 +83,16 @@ body {
     cursor: pointer;
     z-index: 3;
 }
-
-.psVideo-stop {
+.psVideo-stop{
     background: url("../images/player/stop.png") no-repeat;
-    background-size: cover;
+    background-size:cover;
 }
-
-.psVideo-play {
+.psVideo-play{
     background: url("../images/player/play.png") no-repeat;
-    background-size: cover;
+    background-size:cover;
 }
 
-.psVideo-time {
+.psVideo-time{
     float: left;
     font-size: 15px;
     line-height: 23px;
@@ -115,16 +100,14 @@ body {
     margin-left: 10px;
     z-index: 2;
 }
-
-.psVideo-dan {
+.psVideo-dan{
     position: absolute;
     margin-left: 230px;
     margin-top: -1px;
     z-index: 10;
     transition: all .5s;
 }
-
-.psVideo-dan-input {
+.psVideo-dan-input{
     height: 25px;
     background: rgba(245, 245, 245, .8);
     line-height: 25px;
@@ -136,8 +119,7 @@ body {
     outline: none;
     text-indent: 2px;
 }
-
-.psVideo-dan-btn {
+.psVideo-dan-btn{
     display: inline-block;
     height: 25px;
     font-size: 15px;
@@ -152,97 +134,70 @@ body {
     border-top-right-radius: 5px;
     cursor: pointer;
 }
-
-.psVideo-dan-value {
+.psVideo-dan-value{
     position: absolute;
     z-index: 20;
     color: white;
     font-size: 25px;
     font-weight: bold;
-    white-space: nowrap;
+    white-space:nowrap;
     animation: danOnFull 7s linear;
     transform: translateX(-100%);
 }
-
-.psVideo-dan-value-full {
+.psVideo-dan-value-full{
     position: absolute;
     z-index: 20;
     color: white;
     font-size: 25px;
     font-weight: bold;
-    white-space: nowrap;
+    white-space:nowrap;
     animation: danOnFull 10s linear;
     transform: translateX(-100%);
 }
-
 @keyframes danOn {
-    from {
-        left: 100%;
-        transform: translateX(0)
-    }
-
-    to {
-        left: 0;
-        transform: translateX(-100%)
-    }
+    from {left: 100%; transform: translateX(0)}
+    to {left: 0; transform: translateX(-100%)}
 }
-
 @keyframes danOnFull {
-    from {
-        left: 100%;
-        transform: translateX(0)
-    }
-
-    to {
-        left: 0;
-        transform: translateX(-100%)
-    }
+    from {left: 100%; transform: translateX(0)}
+    to {left: 0; transform: translateX(-100%)}
 }
-
-.psVideo-dan-input-full {
+.psVideo-dan-input-full{
     width: 300px;
 }
-
-.psVideo-dan-full {
+.psVideo-dan-full{
     margin-left: calc(50% - 175px);
 }
-
-.psVideo-right-btn {
+.psVideo-right-btn{
     float: right;
     margin-right: 3%;
     z-index: 4;
 }
-
-.psVideo-btn {
+.psVideo-btn{
     width: 23px;
     height: 23px;
     float: right;
     margin-left: 20px;
     cursor: pointer;
 }
-
-.all {
-    background: url("../images/player/all.png") no-repeat;
-    background-size: cover;
+.all{
+     background: url("../images/player/all.png") no-repeat;
+     background-size:cover;
 }
-
-.loop {
+.loop{
     background: url("../images/player/loop.png") no-repeat;
-    background-size: cover;
+    background-size:cover;
 }
-
-.loop-ture {
+.loop-ture{
     background: url("../images/player/1loop.png");
-    background-size: cover;
+    background-size:cover;
 }
-
-.set {
+.set{
     position: relative;
     background: url("../images/player/set.png") no-repeat;
-    background-size: cover;
+    background-size:cover;
 }
-
-.set-list {
+.set-list{
     display: none;
     background: black;
     width: 200px;
@@ -253,8 +208,7 @@ body {
     opacity: .7;
     border-radius: 4px;
 }
-
-.konge1 {
+.konge1{
     display: none;
     position: absolute;
     width: 200px;
@@ -264,13 +218,11 @@ body {
     text-align: center;
     z-index: 4;
 }
-
 .set:hover .set-list,
-.set:hover .konge1 {
+.set:hover .konge1{
     display: block;
 }
-
-.play-speed {
+.play-speed{
     color: white;
     font-weight: bolder;
     width: 100%;
@@ -279,48 +231,40 @@ body {
     font-size: 20px;
     text-align: center;
 }
-
-.play-speed-list {
+.play-speed-list{
     padding-top: 5px;
     font-weight: bolder;
     font-size: 17px;
     color: azure;
     text-align: center;
 }
-
-.play-speed-list span {
+.play-speed-list span{
     margin-left: 15px;
     margin-right: 15px;
 }
-
-.play-speed-list span:hover {
+.play-speed-list span:hover{
     color: #7969ff;
 }
-
-.moren {
+.moren{
     color: #7969ff;
 }
-
-.huazhi {
+.huazhi{
     width: 50px;
     font-size: 15px;
     line-height: 23px;
     color: white;
 }
-
-.sound {
+.sound{
     position: relative;
     background: url("../images/player/sound.png") no-repeat;
-    background-size: cover;
+    background-size:cover;
 }
-
-.jinyin {
+.jinyin{
     position: relative;
     background: url("../images/player/jinyin.png") no-repeat;
-    background-size: cover;
+    background-size:cover;
 }
-
-.psVideo-progress {
+.psVideo-progress{
     width: 95%;
     background: white;
     height: 2px;
@@ -331,12 +275,10 @@ body {
     transition: bottom 0.1s;
     border-radius: 3px;
 }
-
-.psVideo-progress:hover {
+.psVideo-progress:hover{
     height: 6px;
     bottom: 48px;
 }
-
 .psVideo-progress .psVideo-timeBar {
     height: 100%;
     position: absolute;
@@ -345,15 +287,13 @@ body {
     z-index: 2;
     width: 0;
     background: #F9D43A;
-    border-radius: 3px;
+    border-radius:3px;
 }
-
 #soundBtn:hover .sound-list,
-#soundBtn:hover .konge {
-    display: block;
+#soundBtn:hover .konge{
+     display: block;
 }
-
-.sound-list {
+.sound-list{
     display: none;
     position: absolute;
     width: 30px;
@@ -364,8 +304,7 @@ body {
     background: black;
     border-radius: 3px;
 }
-
-.konge {
+.konge{
     display: none;
     position: absolute;
     width: 30px;
@@ -375,19 +314,17 @@ body {
     text-align: center;
     z-index: 4;
 }
-
-.sound-number {
+.sound-number{
     position: relative;
     width: 100%;
     text-align: center;
     height: 20px;
-    padding-top: 5px;
+    padding-top:5px;
     line-height: 20px;
     font-size: 15px;
     color: white;
 }
-
-.volume {
+.volume{
     position: relative;
     margin: auto;
     margin-top: 5px;
@@ -397,7 +334,6 @@ body {
     border-radius: 2px;
     overflow: hidden;
 }
-
 .volumeBar {
     display: block;
     width: 100%;
@@ -406,46 +342,39 @@ body {
     background-color: white;
     z-index: 2;
 }
-
-.player-list {
+.player-list{
     position: absolute;
     padding-left: 10px;
     width: 30px;
     height: 60px;
     top: 50%;
     margin-top: -30px;
-    background: url("../images/player/list.png") -10px 0px rgba(0, 0, 0, .1);
+    background: url("../images/player/list.png") -10px 0px rgba(0,0,0,.1);
     background-size: cover;
     transition: opacity .3s;
 }
-
-.player-list-on {
+.player-list-on{
     opacity: 1;
 }
-
-.player-list-off {
+.player-list-off{
     opacity: 0;
 }
-
-.player-list-bk {
+.player-list-bk{
     display: none;
     position: absolute;
     width: 160px;
     height: 250px;
     top: 50%;
     margin-top: -150px;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0,0,0,.3);
 }
-
-.player-list:hover {
+.player-list:hover{
     background: none;
 }
-
-.player-list:hover .player-list-bk {
+.player-list:hover .player-list-bk{
     display: block;
 }
-
-.player-list-head {
+.player-list-head{
     width: 100%;
     height: 30px;
     text-align: center;
@@ -454,21 +383,18 @@ body {
     color: white;
     background: #7c7d7f;
 }
-
-.player-list-cotent {
+.player-list-cotent{
     height: 220px;
     width: 160px;
     overflow: hidden;
 }
-
-.player-list-box {
+.player-list-box{
     height: 220px;
     width: 195px;
     text-align: center;
     overflow: auto;
 }
-
-.player-list-video {
+.player-list-video{
     padding-top: 5px;
     margin-left: -10px;
     width: 100%;
@@ -482,23 +408,20 @@ body {
     border-bottom: 1px #60bff2 dashed;
     transition: all .2s;
 }
-
-.player-list-video:hover {
+.player-list-video:hover{
     height: 25px;
     font-size: 18px;
     line-height: 20px;
 }
-
 .video-now,
-.video-now:hover {
+.video-now:hover{
     height: 30px;
     font-size: 20px;
     line-height: 25px;
-    background: rgba(139, 288, 255, .3);
+    background: rgba(139,288,255,.3);
     color: #6956ff;
 }
-
-footer {
+footer{
     width: 100%;
     height: 30px;
     text-align: center;
@@ -508,8 +431,7 @@ footer {
     margin-top: 10px;
     top: 0;
 }
-
-.psVideo-loading {
+.psVideo-loading{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -519,8 +441,7 @@ footer {
     height: 60px;
     z-index: 30;
 }
-
-.psVideo-loading span {
+.psVideo-loading span{
     display: inline-block;
     width: 10px;
     height: 0;
@@ -530,84 +451,37 @@ footer {
     margin-top: 0;
     left: 0;
 }
-
-.psVideo-loading span:nth-child(1) {
+.psVideo-loading span:nth-child(1){
     animation: span1 1s linear infinite;
 }
-
-.psVideo-loading span:nth-child(2) {
+.psVideo-loading span:nth-child(2){
     height: 30px;
     top: 50%;
     margin-top: -15px;
     margin-left: 20px;
     animation: span2 1s linear infinite;
 }
-
-.psVideo-loading span:nth-child(3) {
+.psVideo-loading span:nth-child(3){
     height: 60px;
     top: 50%;
     margin-top: -30px;
     margin-left: 40px;
     animation: span3 1s linear infinite;
 }
-
 @keyframes span1 {
-    0% {
-        height: 0;
-        margin-top: 0
-    }
-
-    50% {
-        height: 50px;
-        margin-top: -25px
-    }
-
-    100% {
-        height: 0;
-        margin-top: 0
-    }
+    0%{height: 0; margin-top: 0}
+    50%{height: 50px; margin-top: -25px}
+    100%{height: 0; margin-top: 0}
 }
-
 @keyframes span2 {
-    0% {
-        height: 30px;
-        margin-top: -15px
-    }
-
-    25% {
-        height: 60px;
-        margin-top: -30px
-    }
-
-    50% {
-        height: 30px;
-        margin-top: -15px
-    }
-
-    75% {
-        height: 0;
-        margin-top: 0
-    }
-
-    100% {
-        height: 30px;
-        margin-top: -15px
-    }
+    0%{height: 30px; margin-top: -15px}
+    25%{height: 60px; margin-top: -30px}
+    50%{height: 30px; margin-top: -15px}
+    75%{height: 0; margin-top: 0}
+    100%{height: 30px; margin-top: -15px}
 }
-
 @keyframes span3 {
-    0% {
-        height: 60px;
-        margin-top: -30px
-    }
-
-    50% {
-        height: 0;
-        margin-top: 0
-    }
-
-    100% {
-        height: 60px;
-        margin-top: -30px
-    }
+    0%{height: 60px; margin-top: -30px}
+    50%{height: 0; margin-top: 0}
+    100%{height: 60px; margin-top: -30px}
 }
