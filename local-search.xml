@@ -79,6 +79,31 @@
   
   
   <entry>
+    <title>MyChart</title>
+    <link href="/jin/10001.html"/>
+    <url>/jin/10001.html</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div style="width: 80%;margin: 0 auto">    <canvas id="chart181" style="height: 300px"></canvas></div><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script><script type="text/javascript">    var ctx = document.getElementById('chart181').getContext('2d');    var options = {type: 'line',data: {labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],datasets: [{label: 'My First dataset',backgroundColor: 'rgb(255, 99, 132)',borderColor: 'rgb(255, 99, 132)',data: [0, 10, 5, 2, 20, 30, 45]}]},options: {responsive: true,title: {display: true,text: 'Chart.js Line Chart'}}};;    new Chart(ctx, options);</script>]]></content>
+    
+    
+    <categories>
+      
+      <category>Chart</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Chart</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>存视频</title>
     <link href="/jin/2200.html"/>
     <url>/jin/2200.html</url>
