@@ -6,7 +6,7 @@
     new APlayer({
       container: document.getElementById("aplayer"),
       fixed: true, //是否附着页面底部，否为false
-      autoplay: false, //是否自动播放，否为false,移动端不能生效
+      autoplay: true, //是否自动播放，否为false,移动端不能生效
       volume: 0.6, //初始音量（0~1）
       lrcType: 3, //歌词模式（1、HTML模式 2、js模式 3、lrc文件模式）
       mutex: true, //互斥模式：阻止多个播放器同时播放，当前播放器播放时暂停其他播放器
