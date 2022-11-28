@@ -8,6 +8,28 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
     <script src="./assets/lib/jquery/jquery2.1.4.js"></script>
 </head>
+<script>
+      document.onkeydown = function () {
+        var e = window.event || arguments[0];
+        if (e.keyCode == 123) {
+          alert("禁止");
+          return false;
+        } else if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+          alert("禁止");
+          return false;
+        } else if (e.ctrlKey && e.keyCode == 85) {
+          alert("禁止");
+          return false;
+        } else if (e.ctrlKey && e.keyCode == 83) {
+          alert("禁止");
+          return false;
+        }
+      };
+      document.oncontextmenu = function () {
+        alert("禁止打开右键哦，复制请按Ctrl+C");
+        return false;
+      };
+    </script>
 <body>
     <!-- <p id="hitokoto"><span id="hitokoto_text">:D 获取中...</span></p> -->
     <div id="psVideo" class="psVideo">

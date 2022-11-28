@@ -8,6 +8,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
+<script>
+      document.onkeydown = function () {
+        var e = window.event || arguments[0];
+        if (e.keyCode == 123) {
+          alert("禁止");
+          return false;
+        } else if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+          alert("禁止");
+          return false;
+        } else if (e.ctrlKey && e.keyCode == 85) {
+          alert("禁止");
+          return false;
+        } else if (e.ctrlKey && e.keyCode == 83) {
+          alert("禁止");
+          return false;
+        }
+      };
+      document.oncontextmenu = function () {
+        alert("禁止打开右键哦，复制请按Ctrl+C");
+        return false;
+      };
+    </script>
 <body>
   <div id="app"></div>
   <script>

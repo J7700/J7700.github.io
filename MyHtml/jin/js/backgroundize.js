@@ -1,3 +1,4 @@
+// 背景全屏
 const bannerContainer = $("#banner");
 const viewBg = $("#web_bg");
 const bannerMask = $("#banner .mask");
